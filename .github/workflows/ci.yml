@@ -15,5 +15,12 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest
+
       - name: Run script
         run: python app.py
+
